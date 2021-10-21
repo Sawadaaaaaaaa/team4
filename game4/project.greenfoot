@@ -1,39 +1,16 @@
 #Greenfoot project file
-<<<<<<< HEAD
-class.banana.image=bananas.png
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=585
-package.numDependencies=0
-package.numTargets=2
-=======
 class.Aoi.image=turtle2.png
 class.CopyOfAoi.image=turtle2.png
 class.CopyOfCopyOfAoi.image=turtle2.png
-<<<<<<< HEAD
-class.kabonchan.image=pumpkin.png
-class.sawada.image=bee.png
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-=======
+class.banana.image=bananas.png
 class.kabonchan.image=starfish.png
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=552
 editor.fx.0.y=100
->>>>>>> 358e180b246a10bede120dbec0b6eecc6c0c26df
 height=585
 package.numDependencies=0
-<<<<<<< HEAD
-package.numTargets=5
->>>>>>> 358e180b246a10bede120dbec0b6eecc6c0c26df
-=======
-package.numTargets=6
->>>>>>> 2cafe16e79e7620fcace07c54549e31b0881bbf9
+package.numTargets=7
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -49,73 +26,56 @@ readme.x=10
 readme.y=10
 simulation.speed=50
 target1.height=50
-<<<<<<< HEAD
 target1.name=banana
-=======
-target1.name=CopyOfAoi
->>>>>>> 358e180b246a10bede120dbec0b6eecc6c0c26df
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
 target1.x=0
 target1.y=0
 target2.height=50
-<<<<<<< HEAD
-target2.name=MyWorld
-=======
-target2.name=kabonchan
->>>>>>> 358e180b246a10bede120dbec0b6eecc6c0c26df
+target2.name=CopyOfAoi
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 target2.x=0
 target2.y=0
-<<<<<<< HEAD
-=======
 target3.height=50
-target3.name=Aoi
+target3.name=kabonchan
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
-target4.name=CopyOfCopyOfAoi
+target4.name=Aoi
 target4.showInterface=false
 target4.type=ClassTarget
-target4.width=120
+target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
-target5.name=MyWorld
+target5.name=CopyOfCopyOfAoi
 target5.showInterface=false
 target5.type=ClassTarget
-target5.width=80
+target5.width=120
 target5.x=0
 target5.y=0
-<<<<<<< HEAD
->>>>>>> 358e180b246a10bede120dbec0b6eecc6c0c26df
-version=3.0.0
-width=894
-world.lastInstantiated=MyWorld
-<<<<<<< HEAD
-xPosition=394
-yPosition=268
-=======
-xPosition=706
-yPosition=169
->>>>>>> 358e180b246a10bede120dbec0b6eecc6c0c26df
-=======
 target6.height=50
-target6.name=sawada
+target6.name=MyWorld
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=80
 target6.x=0
 target6.y=0
+target7.height=50
+target7.name=sawada
+target7.showInterface=false
+target7.type=ClassTarget
+target7.width=80
+target7.x=0
+target7.y=0
 version=3.0.0
 width=894
 world.lastInstantiated=MyWorld
-xPosition=240
-yPosition=82
->>>>>>> 2cafe16e79e7620fcace07c54549e31b0881bbf9
+xPosition=954
+yPosition=269
