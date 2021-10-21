@@ -2,12 +2,20 @@
 class.Aoi.image=turtle2.png
 class.CopyOfAoi.image=turtle2.png
 class.CopyOfCopyOfAoi.image=turtle2.png
+<<<<<<< HEAD
 class.kabonchan.image=pumpkin.png
 class.sawada.image=bee.png
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
+=======
+class.kabonchan.image=starfish.png
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+>>>>>>> 358e180b246a10bede120dbec0b6eecc6c0c26df
 height=585
 package.numDependencies=0
 package.numTargets=6
