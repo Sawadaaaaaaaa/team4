@@ -23,6 +23,12 @@ public class sawada extends Actor
 
 
         // Add your action code here.
+
+        if( Greenfoot.isKeyDown( "left" ) ){
+        setRotation(0);
+        move(-1);
+}
+
         if( Greenfoot.isKeyDown( "down" ) ){
             setRotation(90);
             move(1);
@@ -32,6 +38,8 @@ public class sawada extends Actor
 
             move(1);
         }
+
  
+
     }    
 }

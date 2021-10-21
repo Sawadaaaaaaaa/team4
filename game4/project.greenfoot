@@ -2,31 +2,13 @@
 class.Aoi.image=turtle2.png
 class.CopyOfAoi.image=turtle2.png
 class.CopyOfCopyOfAoi.image=turtle2.png
-<<<<<<< HEAD
-<<<<<<< HEAD
 class.banana.image=bananas.png
-=======
->>>>>>> 6dfed15c3ce459b5649bf66e566470cc065f8929
 class.kabonchan.image=starfish.png
 class.sawada.image=bee.png
 editor.fx.0.height=739
 editor.fx.0.width=816
-<<<<<<< HEAD
-editor.fx.0.x=552
-editor.fx.0.y=100
-=======
-editor.fx.0.x=219
-editor.fx.0.y=123
->>>>>>> 6dfed15c3ce459b5649bf66e566470cc065f8929
-=======
-class.banana.image=bananas.png
-class.kabonchan.image=starfish.png
-class.sawada.image=bee.png
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
->>>>>>> 02dff9a1a88e3134d9fda895507ad699041d72d9
+editor.fx.0.x=126
+editor.fx.0.y=146
 height=585
 package.numDependencies=0
 package.numTargets=7
@@ -96,10 +78,5 @@ target7.y=0
 version=3.0.0
 width=894
 world.lastInstantiated=MyWorld
-<<<<<<< HEAD
-xPosition=954
-yPosition=269
-=======
-xPosition=115
-yPosition=136
->>>>>>> 6dfed15c3ce459b5649bf66e566470cc065f8929
+xPosition=114
+yPosition=382
