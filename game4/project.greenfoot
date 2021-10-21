@@ -2,7 +2,11 @@
 class.Aoi.image=turtle2.png
 class.CopyOfAoi.image=turtle2.png
 class.CopyOfCopyOfAoi.image=turtle2.png
+<<<<<<< HEAD
 class.sawada.image=bee.png
+=======
+class.kabonchan.image=pumpkin.png
+>>>>>>> 6c275a2d121b40dd6e0f20480427673e821c3c71
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
@@ -32,28 +36,32 @@ target1.width=80
 target1.x=0
 target1.y=0
 target2.height=50
-target2.name=Aoi
+target2.name=kabonchan
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 target2.x=0
 target2.y=0
 target3.height=50
-target3.name=CopyOfCopyOfAoi
+target3.name=Aoi
 target3.showInterface=false
 target3.type=ClassTarget
-target3.width=120
+target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
-target4.name=MyWorld
+target4.name=CopyOfCopyOfAoi
 target4.showInterface=false
 target4.type=ClassTarget
-target4.width=80
+target4.width=120
 target4.x=0
 target4.y=0
 target5.height=50
+<<<<<<< HEAD
 target5.name=sawada
+=======
+target5.name=MyWorld
+>>>>>>> 6c275a2d121b40dd6e0f20480427673e821c3c71
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
