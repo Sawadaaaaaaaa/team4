@@ -6,40 +6,45 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class sawada extends Actor
+public class Nakamura extends Actor
 {
     /**
      * Act - do whatever the sawada wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private boolean movingleft = false; 
     public void act() 
     {
 
-
         if( Greenfoot.isKeyDown( "right" ) ){
-        setRotation(0);
-        move(1);
-    }// Add your action code here.
-
+            if( movingleft ){
+                setRotation(0);
+                movingleft = false;
+                getImage().mirrorHorizontally();
+            }
+            move(2);
+        }// Add your action code here.
 
         // Add your action code here.
-
         if( Greenfoot.isKeyDown( "left" ) ){
-        setRotation(0);
-        move(-1);
-}
+            if( ! movingleft ){
+                setRotation(0);
+                movingleft = true;
+                getImage().mirrorHorizontally();
+            }
+            move(-2);
+        }
 
         if( Greenfoot.isKeyDown( "down" ) ){
-            setRotation(90);
-            move(1);
+            setRotation(45);
+            move(2);
         }
         if( Greenfoot.isKeyDown( "up" ) ){
-            setRotation(-90);
+            setRotation(-45);
 
-            move(1);
+            move(2);
         }
 
- 
 
     }    
 }
