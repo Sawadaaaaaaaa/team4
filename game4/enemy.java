@@ -17,8 +17,10 @@ public class enemy extends Actor
         // Add your action code here.
         //敵の進む速度
         setRotation(0);
-        move(-2);
+        move(-1);
         //主人公のいる位置にまっすぐ進む
-        
+        if( isAtEdge() ){
+            getWorld().removeObject( this );
+        }
     }    
 }
