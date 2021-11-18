@@ -23,7 +23,9 @@ public class bullet extends Actor
     {
         setRotation(0);
         move(6);
-
+        /*if( isAtEdge() ){
+        getWorld().removeObject( this );
+        }*/
         Actor actor = getOneIntersectingObject( enemy.class );
         if( actor != null ){
 
@@ -40,6 +42,14 @@ public class bullet extends Actor
         getWorld().addObject( new bullet(), getX(), getY() );
         flag_tama = 50;  // 数字を変えると発射間隔が変わる
         }
+
+        
+        /*if( flag_tama > 0 ) flag_tama--;
+        if( Greenfoot.isKeyDown( "space" ) ){
+            if( flag_tama == 0 ){
+                getWorld().addObject( new bullet(), getX(), getY() );
+                flag_tama = 50;  // 数字を変えると発射間隔が変わる
+            }
         }*/ 
     }
 }
