@@ -35,21 +35,7 @@ public class bullet extends Actor
         if( isAtEdge() ){
             getWorld().removeObject( this );
         }
-
-        /*if( flag_tama > 0 ) flag_tama--;
-        if( Greenfoot.isKeyDown( "space" ) ){
-        if( flag_tama == 0 ){
-        getWorld().addObject( new bullet(), getX(), getY() );
-        flag_tama = 50;  // 数字を変えると発射間隔が変わる
-        }
-
         
-        /*if( flag_tama > 0 ) flag_tama--;
-        if( Greenfoot.isKeyDown( "space" ) ){
-            if( flag_tama == 0 ){
-                getWorld().addObject( new bullet(), getX(), getY() );
-                flag_tama = 50;  // 数字を変えると発射間隔が変わる
-            }
-        }*/ 
+        
     }
 }

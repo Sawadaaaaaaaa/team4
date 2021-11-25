@@ -12,7 +12,8 @@ public class Nakamura extends Actor
      * Act - do whatever the sawada wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private boolean movingleft = false; 
+    private boolean movingleft = false;
+    private int flag_bullet = 0;
     public void act() 
     {
 
@@ -44,10 +45,13 @@ public class Nakamura extends Actor
 
             move(3);
         }
+        if(flag_bullet > 0) flag_bullet--;
         if(Greenfoot.isKeyDown("space")){
+            if(flag_bullet == 0){
+                getWorld().addObject(new bullet(), getX(), getY());
+                flag_bullet = 20;
+            }
 
-            getWorld().addObject(new bullet(), getX(), getY());
-
-        }    
+        }
     }
 }

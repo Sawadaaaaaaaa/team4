@@ -12,7 +12,8 @@ public class Nakamura_sinzou extends Actor
      * Act - do whatever the sawada wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private boolean movingleft = false; 
+    private boolean movingleft = false;
+    private boolean flag_bullet = false;
 
     public void act() 
     {
@@ -52,9 +53,12 @@ public class Nakamura_sinzou extends Actor
             Greenfoot.stop();
         }
         if(Greenfoot.isKeyDown("space")){
+            if(flag_bullet == false){
+                getWorld().addObject(new bullet(), getX(), getY());
+                flag_bullet = true;
+            }
 
-            getWorld().addObject(new bullet(), getX(), getY());
-
-        }    
+        }
+        else flag_bullet=false;
     }
 }
