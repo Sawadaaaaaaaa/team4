@@ -44,7 +44,7 @@ public class Nakamura extends Actor
             setRotation(-45);
 
             move(3);
-        }
+        } 
         if(flag_bullet > 0) flag_bullet--;
         if(Greenfoot.isKeyDown("space")){
             if(flag_bullet == 0){

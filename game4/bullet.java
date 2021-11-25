@@ -36,5 +36,6 @@ public class bullet extends Actor
         if(flag_remove==true){
            getWorld().removeObject( this ); 
         }
+
     }
 }
