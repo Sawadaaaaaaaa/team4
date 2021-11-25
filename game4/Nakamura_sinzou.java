@@ -13,7 +13,6 @@ public class Nakamura_sinzou extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private boolean movingleft = false;
-    private boolean flag_bullet = false;
 
     public void act() 
     {
@@ -52,13 +51,5 @@ public class Nakamura_sinzou extends Actor
             getWorld().showText("GAME OVER", 400, 200);
             Greenfoot.stop();
         }
-        if(Greenfoot.isKeyDown("space")){
-            if(flag_bullet == false){
-                getWorld().addObject(new bullet(), getX(), getY());
-                flag_bullet = true;
-            }
-
-        }
-        else flag_bullet=false;
     }
 }

@@ -18,24 +18,23 @@ public class bullet extends Actor
         image.scale(10, 10);
         setImage(image);
     }
-    //private int flag_tama = 0;
+    private boolean flag_remove = false;
     public void act() 
     {
         setRotation(0);
         move(6);
-        /*if( isAtEdge() ){
-        getWorld().removeObject( this );
-        }*/
         Actor actor = getOneIntersectingObject( enemy.class );
         if( actor != null ){
-
-            getWorld().removeObject( actor );
+            if(flag_remove==false){
+                getWorld().removeObject( actor );
+                flag_remove=true;
+            }
         }
-
         if( isAtEdge() ){
             getWorld().removeObject( this );
         }
-        
-        
+        if(flag_remove==true){
+           getWorld().removeObject( this ); 
+        }
     }
 }
