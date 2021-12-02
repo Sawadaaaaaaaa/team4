@@ -19,33 +19,56 @@ public class Nakamura_sinzou extends Actor
     public void act() 
     {
         getImage().setTransparency(0);
-        if( Greenfoot.isKeyDown( "right" ) ){
-            if( movingleft ){
-                setRotation(0);
-                movingleft = false;
-                getImage().mirrorHorizontally();
-            }
-            move(3);
-        }// Add your action code here.
+        int x = getX(); 
 
-        // Add your action code here.
-        if( Greenfoot.isKeyDown( "left" ) ){
-            if( ! movingleft ){
-                setRotation(0);
-                movingleft = true;
-                getImage().mirrorHorizontally();
-            }
-            move(-3);
-        }
+        int y = getY(); 
 
-        if( Greenfoot.isKeyDown( "down" ) ){
-            setRotation(45);
-            move(3);
-        }
-        if( Greenfoot.isKeyDown( "up" ) ){
-            setRotation(-45);
+        if( Greenfoot.isKeyDown( "left") ){ 
 
-            move(3);
+            setLocation( x-3,y ); 
+
+        } 
+
+        if( Greenfoot.isKeyDown("a" ) ){ 
+
+            setLocation( x-3,y ); 
+
+        } 
+
+        if( Greenfoot.isKeyDown( "right") ){ 
+
+            setLocation( x+3,y ); 
+
+        } 
+
+        if( Greenfoot.isKeyDown( "d" ) ){ 
+
+            setLocation( x+3,y ); 
+
+        } 
+
+        if( Greenfoot.isKeyDown( "up") ){ 
+
+            setLocation( x,y-3 ); 
+
+        } 
+
+        if( Greenfoot.isKeyDown( "w" ) ){ 
+
+            setLocation( x,y-3 ); 
+
+        } 
+
+        if( Greenfoot.isKeyDown( "down") ){ 
+
+            setLocation( x,y+3 ); 
+
+        } 
+
+        if( Greenfoot.isKeyDown("s" ) ){ 
+
+            setLocation( x,y+3 ); 
+
         }
         Actor actor = getOneIntersectingObject( enemy.class );
         if( actor != null ){

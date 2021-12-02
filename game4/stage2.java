@@ -34,4 +34,5 @@ public class stage2 extends World
             addObject( new enemy(), x, y );
         }
     }
+
 }
