@@ -24,10 +24,21 @@ public class bullet extends Actor
         setRotation(0);
         move(6);
         Actor actor = getOneIntersectingObject( enemy.class );
-        if( actor != null ){
+        Actor actor2 = getOneIntersectingObject( enemy_red.class );
+        if( actor != null){
             if(flag_remove==false){
                 getWorld().removeObject( actor );
                 flag_remove=true;
+                MyWorld stage = (MyWorld)getWorld();
+                stage.addScore(100);
+            }
+        }
+        if( actor2 != null){
+            if(flag_remove==false){
+                getWorld().removeObject( actor2 );
+                flag_remove=true;
+                MyWorld stage = (MyWorld)getWorld();
+                stage.addScore(300);
             }
         }
         if( isAtEdge() ){

@@ -22,13 +22,13 @@ public class MyWorld extends World
         setBackground(new GreenfootImage("街.jpg"));
         score = 0;
         showScore();
-        time = 25;
+        time = 2500;
         showTime();
         this.addObject( new Nakamura(), 100, 360 );
         this.addObject( new Nakamura_sinzou(), 100, 360 );
         //this.addObject( new bullet(), 100, 360 );
 
-        for(int i = 0; i < 5; ++i){
+        /*for(int i = 0; i < 5; ++i){
             int A = 600;
             int B = 1280;
             int x = A + (int)(Math.random()*((B-A)+1));
@@ -37,7 +37,7 @@ public class MyWorld extends World
             int y = A + (int)(Math.random()*((B-A)+1));
             addObject( new enemy(), x, y );
 
-        }
+        }*/
 
     }
 
@@ -50,7 +50,7 @@ public class MyWorld extends World
         {
             showEndMessage();
             //Greenfoot.stop();
-            if( Greenfoot.isKeyDown( "space" ) ){
+            if( Greenfoot.isKeyDown( "enter" ) ){
                 World game = new stage2();
                 Greenfoot.setWorld( game );
             }
@@ -87,13 +87,20 @@ public class MyWorld extends World
 
     private void showScore()
     {
-        showText("撃破数: " + score, 80, 25);
+        showText(" スコア: " + score, 80, 25);
     }
 
     public void act()
     {
+        if (Greenfoot.getRandomNumber(100) < 2)
+        {
+            addObject(new enemy(), 1200, Greenfoot.getRandomNumber(720));
+        }
+        if (Greenfoot.getRandomNumber(100) < 1)
+        {
+            addObject(new enemy_red(), 1200, Greenfoot.getRandomNumber(720));
+        }
         countTime();
-
         // Greenfoot.playSound("BackgroundSound.mp3");
     }
 

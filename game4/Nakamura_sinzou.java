@@ -71,10 +71,12 @@ public class Nakamura_sinzou extends Actor
 
         }
         Actor actor = getOneIntersectingObject( enemy.class );
-        if( actor != null ){
+        Actor actor2 = getOneIntersectingObject( enemy_red.class );
+        if( actor != null || actor2 != null){
             // TARO とぶつかった時の処理を書く
             getWorld().showText("GAME OVER", 400, 200);
             Greenfoot.stop();
         }
+        
     }
 }
