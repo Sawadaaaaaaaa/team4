@@ -29,13 +29,13 @@ public class MyWorld extends World
         //this.addObject( new bullet(), 100, 360 );
 
         /*for(int i = 0; i < 5; ++i){
-            int A = 600;
-            int B = 1280;
-            int x = A + (int)(Math.random()*((B-A)+1));
+        int A = 600;
+        int B = 1280;
+        int x = A + (int)(Math.random()*((B-A)+1));
 
-            B = 0;
-            int y = A + (int)(Math.random()*((B-A)+1));
-            addObject( new enemy(), x, y );
+        B = 0;
+        int y = A + (int)(Math.random()*((B-A)+1));
+        addObject( new enemy(), x, y );
 
         }*/
 
@@ -50,10 +50,10 @@ public class MyWorld extends World
         {
             showEndMessage();
             //Greenfoot.stop();
-            if( Greenfoot.isKeyDown( "enter" ) ){
+            /*if( Greenfoot.isKeyDown( "enter" ) ){
                 World game = new stage2();
                 Greenfoot.setWorld( game );
-            }
+            }*/
 
         }
     }
@@ -65,8 +65,7 @@ public class MyWorld extends World
         }else if(time <=0){
             showText("Time: 0",700,20);
         }
-        
-        
+
         
     }
 
