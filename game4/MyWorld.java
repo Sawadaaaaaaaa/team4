@@ -49,7 +49,7 @@ public class MyWorld extends World
         if(time <= 0)
         {
             showEndMessage();
-            //Greenfoot.stop();
+            Greenfoot.stop();
             /*if( Greenfoot.isKeyDown( "enter" ) ){
                 World game = new stage2();
                 Greenfoot.setWorld( game );
