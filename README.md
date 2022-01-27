@@ -23,3 +23,11 @@
 
 Start画面  
 ![start](start画面.PNG)
+
+
+Stage1
+![Stage1](Stage1.PNG)
+
+
+Stage2
+![Stage2](Stage2.PNG)
