@@ -22,5 +22,9 @@ public class enemy extends Actor
         if( isAtEdge() ){
             getWorld().removeObject( this );
         }
+        MyWorld stage = (MyWorld)getWorld();
+        if(stage.time <= 0){
+            move(1);
+        }
     }    
 }

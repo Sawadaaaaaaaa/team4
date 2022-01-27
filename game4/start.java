@@ -100,9 +100,9 @@ public class start extends World
         super(1280, 720, 1);
         showTextEx("Space Shooter Nakamura", 640, 300,128,true,Color.RED);
         showTextEx("Push Enter!!", 640, 400,64,true,Color.RED);
-        showTextEx("操作方法",640,500,64,false,Color.BLACK);
-        showTextEx("移動:w,a,s,d,矢印キー", 640,550,64,false,Color.BLACK);
-        showTextEx("弾の発射：space", 640,600,64,false,Color.BLACK);
+        showTextEx("操作方法",640,500,64,true,Color.RED);
+        showTextEx("移動:w,a,s,d,矢印キー", 640,550,64,true,Color.RED);
+        showTextEx("弾の発射：space", 640,600,64,true,Color.RED);
 
     }
 

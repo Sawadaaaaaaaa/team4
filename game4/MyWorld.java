@@ -13,48 +13,45 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
-    public int score;
-    private int time;
+    static public int score;
+    static public int time;
+    GreenfootImage back;
+    GreenfootImage back_flop;
+    int back_dx = -2; // スクロール速度(マイナスにすると左から右)
+    int back_x = 0;
+    int back_width;
+    boolean flop = false;
+    GreenfootSound bgm = null;
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1280, 720, 1);
-        setBackground(new GreenfootImage("街.jpg"));
+        setBackground(new GreenfootImage("city_back.jpg"));
         score = 0;
         showScore();
-        time = 2500;
+        time = 2000;
         showTime();
         this.addObject( new Nakamura(), 100, 360 );
         this.addObject( new Nakamura_sinzou(), 100, 360 );
-        //this.addObject( new bullet(), 100, 360 );
-
-        /*for(int i = 0; i < 5; ++i){
-        int A = 600;
-        int B = 1280;
-        int x = A + (int)(Math.random()*((B-A)+1));
-
-        B = 0;
-        int y = A + (int)(Math.random()*((B-A)+1));
-        addObject( new enemy(), x, y );
-
-        }*/
-
+        back = new GreenfootImage( "./images/city_back.jpg" );
+        back_flop = new GreenfootImage( "./images/city_back_flop.jpg" );
+        back_width = back.getWidth();
+        bgm = new GreenfootSound( "bgm.mp3" );
+        
     }
-
     private void countTime()
     {
         time--;
         showTime();
-
+        started();
         if(time <= 0)
         {
             showEndMessage();
-            Greenfoot.stop();
-            /*if( Greenfoot.isKeyDown( "enter" ) ){
+            if( Greenfoot.isKeyDown( "enter" ) ){
                 World game = new stage2();
                 Greenfoot.setWorld( game );
-            }*/
-
+            }
+            //Greenfoot.delay(100);
         }
     }
 
@@ -66,7 +63,6 @@ public class MyWorld extends World
             showText("Time: 0",700,20);
         }
 
-        
     }
 
     public void addScore(int points) //I've changed my addScore method to require a parameter of type int.
@@ -101,6 +97,27 @@ public class MyWorld extends World
         }
         countTime();
         // Greenfoot.playSound("BackgroundSound.mp3");
+        back_x += back_dx;
+        if( back_x > 0){
+            back_x -= back_width;
+            flop = !flop;
+        }
+        if( back_x < -back_width ){
+            back_x += back_width;
+            flop = !flop;
+        }
+        getBackground().drawImage( flop ? back_flop : back, back_x, 0 );
+        getBackground().drawImage( flop ? back : back_flop, back_x+back_width, 0 );
+
+    }
+    public void started()
+    {
+        bgm.playLoop();
+    }
+
+    public void stopped()
+    {
+        bgm.stop();
     }
 
 }
