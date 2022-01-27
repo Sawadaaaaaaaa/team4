@@ -33,5 +33,9 @@ Stage2
 ![Stage2](Stage2.PNG)
 
 
-フリー音楽
-[bgm](https://maou.audio/bgm_cyber06/)
+フリー音楽  
+bgm　魔王魂様  
+[https://maou.audio/bgm_cyber06/](https://maou.audio/bgm_cyber06/)  
+衝突音 魔王魂様  
+[https://maou.audio/se_battle18/](https://maou.audio/se_battle18/)
+
